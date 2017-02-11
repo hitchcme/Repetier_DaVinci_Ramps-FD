@@ -405,7 +405,7 @@
 #define KILL_METHOD 1
 #define ACK_WITH_LINENUMBER 1
 #define WAITING_IDENTIFIER "wait"
-#define ECHO_ON_EXECUTE 1
+#define ECHO_ON_EXECUTE 0
 #define EEPROM_MODE 1
 #define PS_ON_PIN ORIG_PS_ON_PIN
 
@@ -781,7 +781,7 @@ Values must be in range 1..255
     "moveCacheLow": 14,
     "lowTicksPerMove": 250000,
     "enablePowerOnStartup": "1",
-    "echoOnExecute": "1",
+    "echoOnExecute": "0",
     "sendWaits": "1",
     "ackWithLineNumber": "1",
     "killMethod": 1,
