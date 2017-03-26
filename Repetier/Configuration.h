@@ -364,10 +364,10 @@ It also can add a delay to wait for spindle to run on full speed.
 #define ENDSTOP_X_BACK_ON_HOME 1
 #define ENDSTOP_Y_BACK_ON_HOME 0.5
 #define ENDSTOP_Z_BACK_ON_HOME 0.4
-#define ALWAYS_CHECK_ENDSTOPS 1
+#define ALWAYS_CHECK_ENDSTOPS 0
 #define MOVE_X_WHEN_HOMED 0
 #define MOVE_Y_WHEN_HOMED 0
-#define MOVE_Z_WHEN_HOMED 0
+#define MOVE_Z_WHEN_HOMED -0.46
 
 // ################# XYZ movements ###################
 
@@ -384,10 +384,10 @@ It also can add a delay to wait for spindle to run on full speed.
 #define X_HOME_DIR -1
 #define Y_HOME_DIR -1
 #define Z_HOME_DIR -1
-#define X_MAX_LENGTH 199
-#define Y_MAX_LENGTH 211
-#define Z_MAX_LENGTH 200
-#define X_MIN_POS -9
+#define X_MAX_LENGTH 200
+#define Y_MAX_LENGTH 210
+#define Z_MAX_LENGTH 200.950
+#define X_MIN_POS -8.7
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
 #define Z2_MINMAX_PIN -1
@@ -427,9 +427,9 @@ It also can add a delay to wait for spindle to run on full speed.
 #define MAX_FEEDRATE_Z 3
 #define HOMING_FEEDRATE_X 50
 #define HOMING_FEEDRATE_Y 50
-#define HOMING_FEEDRATE_Z 2
+#define HOMING_FEEDRATE_Z 3
 #define HOMING_ORDER HOME_ORDER_XYZ
-#define ZHOME_PRE_RAISE 0
+#define ZHOME_PRE_RAISE 1
 #define ZHOME_PRE_RAISE_DISTANCE 10
 #define ZHOME_MIN_TEMPERATURE 0
 #define ZHOME_HEAT_ALL 1
@@ -527,7 +527,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define Z_PROBE_Z_OFFSET_MODE 0
 #define UI_BED_COATING 1
 #define FEATURE_Z_PROBE 1
-#define EXTRUDER_IS_Z_PROBE 0
+#define EXTRUDER_IS_Z_PROBE 1
 #define Z_PROBE_BED_DISTANCE 5
 #define Z_PROBE_PIN 22
 #define Z_PROBE_PULLUP 1
@@ -546,7 +546,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define Z_PROBE_REQUIRES_HEATING 0
 #define Z_PROBE_MIN_TEMPERATURE 150
 #define FEATURE_AUTOLEVEL 1
-#define FEATURE_SOFTWARE_LEVELING 0
+#define FEATURE_SOFTWARE_LEVELING 1
 #define Z_PROBE_X1 27
 #define Z_PROBE_Y1 -2
 #define Z_PROBE_X2 27
